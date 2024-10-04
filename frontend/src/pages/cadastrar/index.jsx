@@ -47,7 +47,7 @@ export default function Cadastrar() {
         console.log(resp.data);
 
         setNomeJogo(resp.data.nomeJogo)
-        setDesenvolvedora(resp.data.Desenvolvedora)
+        setNomeDev(resp.data.Desenvolvedora)
     }
 
   useEffect(() => {
