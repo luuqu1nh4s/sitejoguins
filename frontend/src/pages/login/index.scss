@@ -1,4 +1,4 @@
-.pagina-home{
+.pagina-login{
     background-color: #4169e1;
     min-width: 100vh;
     min-height: 100vh;
@@ -9,22 +9,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 70px;
         height: 100vh;
 
-        .intro{
+        .dologin{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-
-        .opcoes{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
+            gap: 20px;
         }
     }
 }

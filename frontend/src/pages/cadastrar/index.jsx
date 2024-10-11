@@ -58,36 +58,37 @@ export default function Cadastrar() {
 
     return (
         <div className='pagina-cadastrar'>
-            <h1> CADASTRAR </h1>
+            <div className="secaomae">
+                <h1> CADASTRAR </h1>
 
-            <div className='form'>
-                <div>
-                    <label>Nome do Jogo:</label>
-                    <input type='text' value={nomeJogo} onChange={e => setNomeJogo(e.target.value)} />
+                <div className='form'>
+                    <div>
+                        <label>Nome do Jogo:</label>
+                        <input type='text' value={nomeJogo} onChange={e => setNomeJogo(e.target.value)} />
+                    </div>
+                    <div>
+                        <label>Desenvolvedora:</label>
+                        <input type='text' value={nomeDev} onChange={e => setNomeDev(e.target.value)}/>
+                    </div>
+                    <div>
+                        <label>Data de Lançamento:</label>
+                        <input type='date' value={dtLanca} onChange={e => setDtLanca(e.target.value)} />
+                    </div>
+                    <div>
+                        <label>Plataformas:</label>
+                        <input type='text' value={plataformas} onChange={e => setPlataformas(e.target.value)} />
+                    </div>
+                    <div>
+                        <label>Nota do Metacritic:</label>
+                        <input type='text' value={notaMC} onChange={e => setNotaMC(e.target.value)} />
+                    </div>                
+                    <div>
+                        <label>Nota de Usuários:</label>
+                        <input type='text' value={notaUsers} onChange={e => setNotaUsers(e.target.value)} /> 
+                    </div>               
                 </div>
-                <div>
-                    <label>Desenvolvedora:</label>
-                    <input type='text' value={nomeDev} onChange={e => setNomeDev(e.target.value)}/>
-                </div>
-                <div>
-                    <label>Data de Lançamento:</label>
-                    <input type='date' value={dtLanca} onChange={e => setDtLanca(e.target.value)} />
-                </div>
-                <div>
-                    <label>Plataformas:</label>
-                    <input type='text' value={plataformas} onChange={e => setPlataformas(e.target.value)} />
-                </div>
-                <div>
-                    <label>Nota do Metacritic:</label>
-                    <input type='text' value={notaMC} onChange={e => setNotaMC(e.target.value)} />
-                </div>                
-                <div>
-                    <label>Nota de Usuários:</label>
-                    <input type='text' value={notaUsers} onChange={e => setNotaUsers(e.target.value)} /> 
-                </div>               
+                <button onClick={salvar}> SALVAR </button>
             </div>
-            <button onClick={salvar}> SALVAR </button>
-
         </div>
     )
 }

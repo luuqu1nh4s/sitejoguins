@@ -1,33 +1,46 @@
 .pagina-cadastrar {
-    padding: 50px;
+    background-color: #4169e1;
+    min-width: 100vh;
+    min-height: 100vh;
+    color: #ffffff;
 
-    .form {
+    .secaomae{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        height: 100vh;
 
-        > div {
+        .form {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            gap: 10px;
 
-            label {
-                display: inline-block;
-                width: 200px;
-                text-align: right;
-                padding-right: 10px;
-                font: 400 24px Arial;
-            }
+            div {
+                display: flex;
+                align-items: center;
 
-            input {
-                font: 400 24px Arial;
-                padding: 5px;
-                border: 1px solid #000;
+                label {
+                    display: inline-block;
+                    width: 300px;
+                    text-align: right;
+                    padding-right: 10px;
+                    font: 400 24px Arial;
+                }
+
+                input {
+                    font: 400 24px Arial;
+                    padding: 5px;
+                    border: 1px solid #000;
+                }
             }
         }
-    }
 
-    button {
-        font: 400 24px Arial;
-        padding: 20px;
+        button {
+            font: 400 24px Arial;
+            border-radius: 10px;
+            padding: 15px;
+        }
     }
 }
